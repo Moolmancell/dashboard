@@ -8,6 +8,21 @@
     src: url(./fonts/Inter-Regular.woff);
 }
 
+.background-1 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(50deg, rgba(255,255,255,1) 0%, rgba(13,146,118,1) 52%, rgba(64,162,227,1) 99%);
+    opacity: 0.5;
+}
+
+.background-2 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(117deg, rgba(64,162,227,1) 5%, rgba(13,146,118,1) 50%, rgba(255,255,255,1) 98%);
+    opacity: 0.5;
+}
 
 body {
     margin: 0;
