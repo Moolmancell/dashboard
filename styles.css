@@ -97,12 +97,19 @@ body {
     box-shadow: 0px -10px 18px 5px black;
 }
 
+.nav-container {
+    display: flex;   
+    justify-content: space-between;
+}
+
 .search {
     display: flex;
     gap: 10px;
+    width: 100%;
+    align-items: center;
 }
 
-.search svg {
+.search svg, .notification-bell {
     width: 40px;
     height: auto;
     flex-shrink: 0;
@@ -111,10 +118,35 @@ body {
 .search input {
     appearance: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     box-sizing: border-box;
     font-family: "Inter Regular";
     padding: 5px;
     font-size: 15px;
     flex: 0 1 700px;
+    height: 40px;
+}
+
+.user-stuff {
+    display: flex;
+    font-family: "Inter Bold";
+    font-size: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-bell {
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #0D9276;
+    border-radius: 50px;
+}
+
+.user-stuff p {
+    margin-right: 60px;
 }
