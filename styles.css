@@ -85,16 +85,13 @@ body {
     margin-left: calc(var(--sidebar-measure) - 50px);
 }
 
-.nav, .profile-bar {
+.nav{
     width: auto;
     height: fit-content;
     background-color: #BBE2EC;
     padding: 20px 20px 20px 80px;
     box-sizing: border-box;
-}
-
-.nav {
-    box-shadow: 0px -10px 18px 5px black;
+    box-shadow: 0px -15px 18px 5px black;
 }
 
 .nav-container {
