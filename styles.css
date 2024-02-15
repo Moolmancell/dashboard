@@ -1,5 +1,8 @@
 :root {
     --sidebar-measure: 300px;
+    --profile-radius: 50px;
+    --profile-background: #0D9276;
+    --padding-topbars: 20px 20px 20px 80px;
 }
 
 @font-face {
@@ -82,16 +85,16 @@ body {
 }
 
 .main {
-    margin-left: calc(var(--sidebar-measure) - 50px);
+    margin-left: var(--sidebar-measure);
 }
 
-.nav{
+.nav , .profile-bar{
     width: auto;
     height: fit-content;
     background-color: #BBE2EC;
-    padding: 20px 20px 20px 80px;
+    padding: var(--padding-topbars);
     box-sizing: border-box;
-    box-shadow: 0px -15px 18px 5px black;
+    margin-left: -50px;
 }
 
 .nav-container {
@@ -140,10 +143,49 @@ body {
 .profile-pic {
     width: 50px;
     height: 50px;
-    background-color: #0D9276;
-    border-radius: 50px;
+    background-color: var(--profile-background);
+    border-radius: var(--profile-radius);
 }
 
 .user-stuff p {
     margin-right: 60px;
+}
+
+.profile-bar {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    box-shadow: 0px 5px 10px rgb(50 50 50 / 20%);
+}
+
+.greetings {
+    display: inline-flex;
+    font-family: "Inter Regular", sans-serif;
+    align-items: center;
+    gap: 10px;
+}
+
+.greetings div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.greetings p {
+    margin: 0;
+}
+
+div.profile-pic {
+    width: 60px;
+    height: 60px;
+    background-color: var(--profile-background);
+    border-radius: var(--profile-radius);
+}
+
+.greet {
+    font-size: 20px;
+}
+
+.bold.user-name {
+    font-size: 25px;
 }
